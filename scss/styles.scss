@@ -72,12 +72,21 @@ section {
   justify-content: center;
 
   button {
-    color: white;
-    background-color: lightgreen;
-    border-bottom: 2px solid green;
+    color: #888;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+
   }
   input {
-
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: 5px solid white;
+    color: #888;
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    font-size: 1em;
   }
 }
 .stats {
