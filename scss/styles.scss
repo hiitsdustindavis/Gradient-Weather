@@ -1,0 +1,27 @@
+form {
+  width: 50%;
+  margin:auto;
+}
+label {
+  width:25%;
+}
+label, input {
+  display: inline-block;
+}
+input {
+  width: 75%;
+}
+input[type=submit] {
+  width:100%;
+}
+
+
+.output {
+  display:flex;
+  .showWeather {
+    border: 1px solid green;
+  }
+  .showHumidity {
+    border: 1px solid red;
+  }
+}
