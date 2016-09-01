@@ -70,7 +70,7 @@ gulp.task("build", ['clean'], function(){
     gulp.start('jsBrowserify');
   }
   gulp.start('bower');
-  gulp.start('cssBuild')
+  gulp.start('cssBuild');
 });
 
 gulp.task('jsBuild', ['jsBrowserify'], function() {
@@ -138,4 +138,15 @@ gulp.task('gitStatus', function() {
   git.status({args: '--porcelain'}, function (err, stdout) {
     if(err) throw err;
   });
+});
+
+var gulp        = require('gulp');
+var deploy      = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy());
 });
