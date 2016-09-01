@@ -21,10 +21,9 @@
     "fs": "0.0.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
-<<<<<<< HEAD
     "gulp-gh-pages": "^0.5.4",
-=======
->>>>>>> 56894ed4d8a23159c7dfc5a705c618ed11cacc4c
+
+
     "gulp-git": "^1.7.0",
     "gulp-gitignore": "^0.1.0",
     "gulp-jshint": "^2.0.0",
