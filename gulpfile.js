@@ -25,6 +25,8 @@ var gitignore = require('gulp-gitignore');
 var fs = require('fs');
 var buildProduction = utilities.env.production;
 
+gulp.task('default');
+
 gulp.task('concatInterface', function() {
   return gulp.src(['./js/*-interface.js'])
   .pipe(concat('allConcat.js'))
@@ -147,6 +149,6 @@ var deploy      = require('gulp-gh-pages');
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./Gradient-Weather/**/*")
+  return gulp.src("./dist/**/*")
     .pipe(deploy());
 });
